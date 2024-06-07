@@ -17,6 +17,7 @@ public class CustomException  extends  RuntimeException{
         System.out.println(" new  Line Added");
 
         System.out.println(" hi iam naresh explain the conflicts");
+        System.out.println("Hi lets check now whether the conflicts will come or not");
 
     }
     public CustomException(ErrorCode errorCode, Class<?> exceptionOccuredClass, Map<String, Object> additionalProperties) {
