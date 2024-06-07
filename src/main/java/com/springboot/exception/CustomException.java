@@ -14,7 +14,10 @@ public class CustomException  extends  RuntimeException{
     public CustomException(ErrorCode errorCode, Class<?> exceptionOccuredClass) {
         this.errorCode = errorCode;
         this.exceptionOccuredClass = exceptionOccuredClass;
-        System.out.println(" new  Line Added")
+        System.out.println(" new  Line Added");
+
+        System.out.println(" hi iam naresh explain the conflicts");
+
     }
     public CustomException(ErrorCode errorCode, Class<?> exceptionOccuredClass, Map<String, Object> additionalProperties) {
         this.errorCode = errorCode;
