@@ -16,6 +16,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -58,6 +59,17 @@ public class RegistrationController {
     public ResponseEntity<List<CustomerEntity>> searchUsers(@RequestBody Map<String, Object> filterParams) {
         List<CustomerEntity> users = registerService.findUsers(filterParams);
         return ResponseEntity.ok(users);
+    }
+
+    @GetMapping("/getHeroDetails")
+    public ResponseEntity<Map<String,Long>> mapResponseEntitypresponse(){
+
+        Map<String,Long> map=new HashMap<>();
+        map.put("Nagarjuna",50L);
+        map.put("Chiranjeevi",6L);
+        map.put("Venkatesh",70L);
+        map.put("Balaya",100L);
+        return new ResponseEntity<>(map,HttpStatus.ACCEPTED);
     }
 }
 
