@@ -61,16 +61,7 @@ public class RegistrationController {
         return ResponseEntity.ok(users);
     }
 
-    @GetMapping("/getHeroDetails")
-    public ResponseEntity<Map<String,Long>> mapResponseEntitypresponse(){
 
-        Map<String,Long> map=new HashMap<>();
-        map.put("Nagarjuna",50L);
-        map.put("Chiranjeevi",6L);
-        map.put("Venkatesh",70L);
-        map.put("Balaya",100L);
-        return new ResponseEntity<>(map,HttpStatus.ACCEPTED);
-    }
 }
 
 
